@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 from codecs import open  # To use a consistent encoding
 from os import path
 
-VERSION = (1, 0, 0)
+VERSION = (1, 0, 2)
 
 here = path.abspath(path.dirname(__file__))
 
@@ -23,7 +23,7 @@ setup(
     version=".".join(map(str, VERSION)),
     description="Addok plugin to support short city name as equal as full city name.",
     long_description=long_description,
-    url='https://github.com/Mapotempo/addok_usage_name_BAN_FR',
+    url='https://github.com/woop-it/addok_usage_name_BAN_FR',
     author='Frédéric Rodrigo',
     author_email='frederic@mapotempo.com',
     license='WTFPL',

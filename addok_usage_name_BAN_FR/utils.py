@@ -32,4 +32,6 @@ def make_labels(helper, result):
     elif result.type == 'housenumber':
       ret.extend(([result.housenumber, result.name, result.postcode, city], [result.housenumber, result.name, city, result.postcode], [result.housenumber, result.name, result.postcode], [result.housenumber, result.name, city]))
 
+  # Filter out None values and ensure all elements are strings
+  ret = [[elem for elem in sublist if elem is not None] for sublist in ret]
   result.labels.extend(list(map(lambda a: ' '.join(a), ret)))
